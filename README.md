@@ -7,14 +7,14 @@ Uses [@tmke8/pikru](https://www.npmjs.com/package/@tmke8/pikru) for Pikchr to SV
 ## Installation
 
 ```bash
-npm install markdown-it-pikru markdown-it
+npm install @tmke8/markdown-it-pikru markdown-it
 ```
 
 ## Usage
 
 ```javascript
 import MarkdownIt from "markdown-it";
-import markdownItPikru from "markdown-it-pikru";
+import markdownItPikru from "@tmke8/markdown-it-pikru";
 
 const md = new MarkdownIt();
 md.use(markdownItPikru);
