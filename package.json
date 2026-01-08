@@ -1,0 +1,41 @@
+{
+  "name": "markdown-it-pikru",
+  "version": "1.0.0",
+  "description": "markdown-it plugin to render pikchr code blocks as SVG diagrams",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "scripts": {
+    "test": "mocha test.js",
+    "typecheck": "tsc --noEmit --checkJs --esModuleInterop --module nodenext --moduleResolution nodenext test.js"
+  },
+  "keywords": [
+    "markdown-it",
+    "markdown-it-plugin",
+    "pikchr",
+    "svg",
+    "diagram"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "markdown-it": ">=12.0.0"
+  },
+  "dependencies": {
+    "@tmke8/pikru": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^5.2.3",
+    "@types/markdown-it": "^14.1.2",
+    "@types/mocha": "^10.0.10",
+    "chai": "^6.2.2",
+    "markdown-it": "^14.1.0",
+    "mocha": "^11.7.5"
+  }
+}
