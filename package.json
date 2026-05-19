@@ -28,7 +28,7 @@
     "markdown-it": ">=12.0.0"
   },
   "dependencies": {
-    "@tmke8/pikru": "^0.1.0"
+    "@tmke8/pikru": "^1.2.1"
   },
   "devDependencies": {
     "@types/chai": "^5.2.3",
