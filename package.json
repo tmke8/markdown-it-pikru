@@ -31,9 +31,9 @@
     "@tmke8/pikru": "^1.2.1"
   },
   "devDependencies": {
-    "@types/chai": "^6.2.2",
+    "@types/chai": "^5.2.3",
     "@types/markdown-it": "^14.1.2",
-    "@types/mocha": "^11.7.5",
+    "@types/mocha": "^10.0.10",
     "chai": "^6.2.2",
     "markdown-it": "^14.1.0",
     "mocha": "^11.7.5"
