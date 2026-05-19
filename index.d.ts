@@ -8,6 +8,12 @@ export interface MarkdownItPikruOptions {
   cssVariables?: boolean;
 
   /**
+   * Add explicit width and height attributes to the SVG element.
+   * @default false
+   */
+  explicitSize?: boolean;
+
+  /**
    * CSS class name for the wrapper div.
    * @default "pikchr"
    */

@@ -5,13 +5,14 @@ import { Pikru } from "@tmke8/pikru";
  *
  * @param {import('markdown-it')} md - markdown-it instance
  * @param {Object} [options] - Plugin options
- * @param {boolean} [options.cssVariables=false] - Use CSS variables for colors (enables light/dark mode support)
+ * @param {boolean} [options.cssVariables=false] - Use CSS variables for colors, enabling light/dark mode support.
+ * @param {boolean} [options.explicitSize=false] - Add explicit width and height attributes to the SVG element.
  * @param {string} [options.className='pikchr'] - CSS class name for the wrapper div
  */
 export default function markdownItPikru(md, options = {}) {
-  const { cssVariables = false, className = "pikchr" } = options;
+  const { cssVariables = false, explicitSize = false, className = "pikchr" } = options;
 
-  const pikru = new Pikru({ cssVariables });
+  const pikru = new Pikru({ cssVariables, explicitSize });
 
   const defaultFence =
     md.renderer.rules.fence ||

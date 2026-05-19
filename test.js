@@ -54,4 +54,22 @@ describe("markdown-it-pikru", function () {
 
     expect(result).to.not.include("--pik-black");
   });
+
+  it("doesn't set width and height when not requested", function () {
+    const md = new MarkdownIt();
+    md.use(markdownItPikru, { explicitSize: false });
+
+    const result = md.render("```pikchr\nbox\n```");
+
+    expect(result).to.not.include("width=\"");
+  });
+
+  it("sets width and height when requested", function () {
+    const md = new MarkdownIt();
+    md.use(markdownItPikru, { explicitSize: true });
+
+    const result = md.render("```pikchr\nbox\n```");
+
+    expect(result).to.include("width=\"");
+  });
 });
